@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  
+  <title>fibonacci | Who I am?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="今天在看并发的时候看到的一到联系，求fibonacci数列，记录下来备忘
+
+斐波纳契数列，又称黄金分割数列，指的是这样一个数列：1、1、2、3、5、8、13、21、……在数学上，斐波纳契数列以如下被以递归的方法定义：F0=0，F1=1，Fn=F(n-1)+F(n-2)（n&amp;gt;=2，n∈N*）。
+
+实现如下:
+1234567891011121314151617181920212223242526">
+<meta property="og:type" content="article">
+<meta property="og:title" content="fibonacci">
+<meta property="og:url" content="http://yoursite.com/2016/08/30/fibonacci/index.html">
+<meta property="og:site_name" content="Who I am?">
+<meta property="og:description" content="今天在看并发的时候看到的一到联系，求fibonacci数列，记录下来备忘
+
+斐波纳契数列，又称黄金分割数列，指的是这样一个数列：1、1、2、3、5、8、13、21、……在数学上，斐波纳契数列以如下被以递归的方法定义：F0=0，F1=1，Fn=F(n-1)+F(n-2)（n&amp;gt;=2，n∈N*）。
+
+实现如下:
+1234567891011121314151617181920212223242526">
+<meta property="og:updated_time" content="2016-08-30T15:46:22.609Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="fibonacci">
+<meta name="twitter:description" content="今天在看并发的时候看到的一到联系，求fibonacci数列，记录下来备忘
+
+斐波纳契数列，又称黄金分割数列，指的是这样一个数列：1、1、2、3、5、8、13、21、……在数学上，斐波纳契数列以如下被以递归的方法定义：F0=0，F1=1，Fn=F(n-1)+F(n-2)（n&amp;gt;=2，n∈N*）。
+
+实现如下:
+1234567891011121314151617181920212223242526">
+  
+    <link rel="alternate" href="/atom.xml" title="Who I am?" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/typing.css">
+</head>
+
+<body>
+  <div id="container" class="container">
+    <article id="post-fibonacci" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      fibonacci
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry typo" itemprop="articleBody">
+      
+        <p>今天在看并发的时候看到的一到联系，求fibonacci数列，记录下来备忘</p>
+<blockquote>
+<p>斐波纳契数列，又称黄金分割数列，指的是这样一个数列：1、1、2、3、5、8、13、21、……在数学上，斐波纳契数列以如下被以递归的方法定义：F0=0，F1=1，Fn=F(n-1)+F(n-2)（n&gt;=2，n∈N*）。</p>
+</blockquote>
+<p>实现如下:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Fibonacci</span></span>&#123;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</div><div class="line">		</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	<span class="comment">//递归实现</span></div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">fibonacci</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</div><div class="line">		<span class="keyword">if</span>(n &lt;= <span class="number">2</span>)&#123;</div><div class="line">			<span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">		&#125;<span class="keyword">else</span>&#123;</div><div class="line">			<span class="keyword">return</span> fibonacci(n-<span class="number">1</span>) + fibonacci(n-<span class="number">2</span>);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="comment">//递推实现</span></div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">fibonacciNormal</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</div><div class="line">		<span class="keyword">if</span>(n &lt;= <span class="number">2</span>)&#123;</div><div class="line">			<span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">		&#125;<span class="keyword">else</span>&#123;</div><div class="line">			<span class="keyword">int</span> n1 = <span class="number">1</span>, n2 = <span class="number">1</span>, sn = <span class="number">0</span>;</div><div class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n-<span class="number">2</span>; i ++)&#123;</div><div class="line">				sn = n1 + n2;</div><div class="line">				n1 = n2;</div><div class="line">				n2 = sn;</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">return</span> sn;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <ul class="article-meta">
+        <li>
+          <span class="label">Published Date:</span>
+          <a href="/2016/08/30/fibonacci/" class="article-date">
+  <time datetime="2016-08-30T15:33:04.000Z" itemprop="datePublished">2016-08-30</time>
+</a>
+
+        </li>
+        
+        
+        <hr/>
+      </ul>
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav" class="article-nav">
+  
+    <span id="article-nav-newer" class="article-nav-link-wrap newer"></span>
+  
+  
+    <a href="/2016/08/28/maven-study/" id="article-nav-older" class="article-nav-link-wrap older">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">maven学习（持续更新中...）</div>
+    </a>
+  
+</nav>
+
+
+  
+</article>
+
+
+
+  </div>
+  
+    <footer id="footer" class="post-footer footer">
+      <hr/>
+      <div id="footerContent" class="footer-content">
+        <p>Who I am, where I come from, where to go?</p>
+
+
+      </div>
+    </footer>
+
+  
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/typing.js"></script>
+<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+
+
+
+
+
+
+
+  </div>
+</body>
+</html>
