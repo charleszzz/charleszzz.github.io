@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Who I am?</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2016-08-31T14:18:39.272Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Charles Zhang</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>java 实现斐波那契数列</title>
+    <link href="http://yoursite.com/2016/08/30/fibonacci/"/>
+    <id>http://yoursite.com/2016/08/30/fibonacci/</id>
+    <published>2016-08-30T15:33:04.000Z</published>
+    <updated>2016-08-31T14:18:39.272Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天在看并发的时候看到的一到联系，求fibonacci数列，记录下来备忘</p>
+<blockquote>
+<p>斐波纳契数列，又称黄金分割数列，指的是这样一个数列：1、1、2、3、5、8、13、21、……在数学上，斐波纳契数列以如下被以递归的方法定义：F0=0，F1=1，Fn=F(n-1)+F(n-2)（n&gt;=2，n∈N*）。</p>
+</blockquote>
+<p>实现如下:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Fibonacci</span></span>&#123;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</div><div class="line">		System.out.println(fibonacci(<span class="number">7</span>));</div><div class="line">		System.out.println(fibonacciNormal(<span class="number">7</span>));		</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	<span class="comment">//递归实现</span></div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">fibonacci</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</div><div class="line">		<span class="keyword">if</span>(n &lt;= <span class="number">2</span>)&#123;</div><div class="line">			<span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">		&#125;<span class="keyword">else</span>&#123;</div><div class="line">			<span class="keyword">return</span> fibonacci(n-<span class="number">1</span>) + fibonacci(n-<span class="number">2</span>);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="comment">//递推实现</span></div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">fibonacciNormal</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</div><div class="line">		<span class="keyword">if</span>(n &lt;= <span class="number">2</span>)&#123;</div><div class="line">			<span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">		&#125;<span class="keyword">else</span>&#123;</div><div class="line">			<span class="keyword">int</span> n1 = <span class="number">1</span>, n2 = <span class="number">1</span>, sn = <span class="number">0</span>;</div><div class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n-<span class="number">2</span>; i ++)&#123;</div><div class="line">				sn = n1 + n2;</div><div class="line">				n1 = n2;</div><div class="line">				n2 = sn;</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">return</span> sn;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天在看并发的时候看到的一到联系，求fibonacci数列，记录下来备忘&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;斐波纳契数列，又称黄金分割数列，指的是这样一个数列：1、1、2、3、5、8、13、21、……在数学上，斐波纳契数列以如下被以递归的方法定义：F0=0，F1=1，
+    
+    </summary>
+    
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+      <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>maven学习（持续更新中...）</title>
+    <link href="http://yoursite.com/2016/08/28/maven-study/"/>
+    <id>http://yoursite.com/2016/08/28/maven-study/</id>
+    <published>2016-08-28T14:45:27.000Z</published>
+    <updated>2016-08-28T14:53:14.765Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><h4 id="maven是一个项目管理工具，其具体功能如下"><a href="#maven是一个项目管理工具，其具体功能如下" class="headerlink" title="maven是一个项目管理工具，其具体功能如下"></a>maven是一个项目管理工具，其具体功能如下</h4><ul>
+<li>构建项目（Builds）</li>
+<li>依赖管理（Dependencies）</li>
+<li>配置管理（SCMs）</li>
+<li>发布管理（Releases）</li>
+<li>文档编制（Documentation）</li>
+<li>生成项目报告（Report）</li>
+</ul>
+<h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><h4 id="微内核"><a href="#微内核" class="headerlink" title="微内核"></a>微内核</h4><p>maven 是通过插件机制来实现核心功能的，而 maven 只负责解析 xml 文档和管理项目生命周期和管理插件，核心功能都是交予了插件来进行实现的。</p>
+<h4 id="约定优于配置"><a href="#约定优于配置" class="headerlink" title="约定优于配置"></a>约定优于配置</h4><p>maven 为其每个配置都提供了合理的默认设置。</p>
+<h3 id="核心概念"><a href="#核心概念" class="headerlink" title="核心概念"></a>核心概念</h3><h4 id="pom概述"><a href="#pom概述" class="headerlink" title="pom概述"></a>pom概述</h4><p>maven 是通过 pom.xml 文件来管理和运行项目，POM 是 Project Object Model 的缩写。项目的属性，依赖和构建配置信息都定义在 pom.xml 文件里面。下图为 pom 文件的组成部分。</p>
+<p><img src="/images/14717815654791.jpg" alt=""></p>
+<p>大致分为四部分：</p>
+<ul>
+<li>pom 关系</li>
+<li>构建设置</li>
+<li>项目基本信息</li>
+<li>构建环境</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot; title=&quot;概念&quot;&gt;&lt;/a&gt;概念&lt;/h3&gt;&lt;h4 id=&quot;maven是一个项目管理工具，其具体功能如下&quot;&gt;&lt;a href=&quot;#maven是一个项目管理工具，其具体功能如下&quot; class=&quot;
+    
+    </summary>
+    
+    
+      <category term="maven" scheme="http://yoursite.com/tags/maven/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>进制学习</title>
+    <link href="http://yoursite.com/2016/08/28/common-radix/"/>
+    <id>http://yoursite.com/2016/08/28/common-radix/</id>
+    <published>2016-08-28T14:26:09.000Z</published>
+    <updated>2016-08-28T14:40:52.860Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="相关概念"><a href="#相关概念" class="headerlink" title="相关概念"></a>相关概念</h3><ul>
+<li>数制是用一组固定的符号和统一的规则来表示数值的方法。</li>
+<li>计算机底层是用的是数制是二进制。</li>
+<li>用 <code>Java</code> 编程使用的是十进制。<code>Java</code> 底层仍使用二进制</li>
+<li>计算机常用的数制还有八进制和十六进制</li>
+</ul>
+<h3 id="十进制"><a href="#十进制" class="headerlink" title="十进制"></a>十进制</h3><blockquote>
+<p>十进制的基本数字是0～9，逢10进位。10称作“基数”，<code>10^n</code> （10的n次幂）被称作“权”。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">10000=1*10^4</div><div class="line">1000=1*10^3</div><div class="line">100=1*10^2</div><div class="line">10=1*10^1</div><div class="line">1=1*10^0</div></pre></td></tr></table></figure>
+<h3 id="二进制"><a href="#二进制" class="headerlink" title="二进制"></a>二进制</h3><blockquote>
+<p>二进制的基本数字数0～1，逢2进位。基数是2，权为 <code>2^n</code>。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">10000=1*2^4</div><div class="line">1000=1*2^3</div><div class="line">100=1*2^2</div><div class="line">10=1*2^1</div><div class="line">1=1*2^0</div></pre></td></tr></table></figure>
+<h3 id="十六进制"><a href="#十六进制" class="headerlink" title="十六进制"></a>十六进制</h3><blockquote>
+<p>基本数字:0～9，A~F,A表示10，以此类推，逢16进位，基数16，权势 <code>16^n</code>。十六进制是二进制的简写，方便专业人员书写二进制数据。在 <code>Java</code> 代码中十六进制数用0X或0x做前缀。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">1000=1*16^3</div><div class="line">100=1*16^2</div><div class="line">10=1*16^1</div><div class="line">1=1*16^0</div></pre></td></tr></table></figure>
+<h3 id="进制转换"><a href="#进制转换" class="headerlink" title="进制转换"></a>进制转换</h3><h4 id="十六进制-1"><a href="#十六进制-1" class="headerlink" title="十六进制"></a>十六进制</h4><h5 id="转换为十进制"><a href="#转换为十进制" class="headerlink" title="转换为十进制"></a>转换为十进制</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">(5E)16 = 5*16^1 + 14*16^0</div><div class="line">		=94</div></pre></td></tr></table></figure>
+<h5 id="转换为二进制"><a href="#转换为二进制" class="headerlink" title="转换为二进制"></a>转换为二进制</h5><blockquote>
+<p>十六进制中的一位代表二进制中的四位，忽略前面的0。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">(5E)16 = (1011110)2</div><div class="line">5 = 1*2^2 + 1*2^0 = 0101</div><div class="line">E = 1*2^3 + 1*2^2 + 1*2^1 </div><div class="line">	= 1110</div></pre></td></tr></table></figure>
+<h4 id="十进制-1"><a href="#十进制-1" class="headerlink" title="十进制"></a>十进制</h4><h5 id="转为十六进制"><a href="#转为十六进制" class="headerlink" title="转为十六进制"></a>转为十六进制</h5><blockquote>
+<p>十进制转为二进制便不断的除以二，保留余数，直到商为0，将所有余数倒序排列。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">138=(8A)16</div><div class="line">138/16=8.......A</div><div class="line">8/16=0........8</div></pre></td></tr></table></figure>
+<h5 id="转为二进制"><a href="#转为二进制" class="headerlink" title="转为二进制"></a>转为二进制</h5><blockquote>
+<p>十进制转为二进制便不断的除以二，保留余数，直到商为0，将所有余数倒序排列。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">13 = (1101)2</div><div class="line">13/2＝6........1</div><div class="line">6/2=3........0</div><div class="line">3/2=1........1</div><div class="line">1/2=0........1</div></pre></td></tr></table></figure>
+<h4 id="二进制-1"><a href="#二进制-1" class="headerlink" title="二进制"></a>二进制</h4><h5 id="转为十进制"><a href="#转为十进制" class="headerlink" title="转为十进制"></a>转为十进制</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">(100010)2=1*2^5 + 1^2^1 </div><div class="line">			=34</div></pre></td></tr></table></figure>
+<h5 id="转为十六进制-1"><a href="#转为十六进制-1" class="headerlink" title="转为十六进制"></a>转为十六进制</h5><blockquote>
+<p>可将二进制转为十进制，然后由十进制转为二进制。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">(100010)2=(22)16</div></pre></td></tr></table></figure>
+<p>思路如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">(100010)2=1*2^5 + 1^2^1 </div><div class="line">			=34</div><div class="line">34／16=2......2</div><div class="line">2/16=0......2</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;相关概念&quot;&gt;&lt;a href=&quot;#相关概念&quot; class=&quot;headerlink&quot; title=&quot;相关概念&quot;&gt;&lt;/a&gt;相关概念&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;数制是用一组固定的符号和统一的规则来表示数值的方法。&lt;/li&gt;
+&lt;li&gt;计算机底层是用的是数制是二进制。&lt;/li
+    
+    </summary>
+    
+    
+      <category term="数学" scheme="http://yoursite.com/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+  </entry>
+  
+</feed>

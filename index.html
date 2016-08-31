@@ -1,78 +1,507 @@
+
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="null">
+    
 <head>
-  <meta charset="utf-8">
-  
-  <title>Who I am?</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Who I am?">
+    <title>Who I am?</title>
+    <meta name="author" content="Charles Zhang">
+    
+    
+    
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
+    
+    <meta property="og:type" content="blog">
 <meta property="og:title" content="Who I am?">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="Who I am?">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Who I am?">
-  
-    <link rel="alternate" href="/atom.xml" title="Who I am?" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.ico">
-  
-  <link rel="stylesheet" href="/css/typing.css">
+    
+    
+        
+    
+    
+    
+    
+    
+    <!--STYLES-->
+    <link rel="stylesheet" href="/assets/css/font-awesome.css">
+    <link rel="stylesheet" href="/assets/css/jquery.fancybox.css">
+    <link rel="stylesheet" href="/assets/css/jquery.fancybox-thumbs.css">
+    <link rel="stylesheet" href="/assets/css/tranquilpeak.css">
+    <!--STYLES END-->
+    
+    
 </head>
 
-<body>
-  <div id="container" class="container">
-    <div class="home">
-  <div class="content">
-    <div class="profile">
-      <h1 class="nickname">Charles Zhang</h1>
-      <div class="description">
-        <p><p>Who I am, where I come from, where to go?</p>
-</p>
-      </div>
+    <body>
+        <div id="blog">
+            <!-- Define author's picture -->
+
+
+    
+
+<header id="header" data-behavior="1">
+    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+    <div class="header-title">
+        <a class="header-title-link" href="/ ">Who I am?</a>
     </div>
-    <hr/>
-    <ul class="links">
-      
-        <li>
-          <a href="/archives">Blog</a>
-        </li>
-      
-        <li>
-          <a href="https://github.com/charleszzz">GitHub</a>
-        </li>
-      
-    </ul>
-  </div>
+    
+        
+            <a  class="header-right-picture "
+                href="#about">
+        
+        
+        </a>
+    
+</header>
+
+            <!-- Define author's picture -->
+
+
+<nav id="sidebar" data-behavior="1">
+    <div class="sidebar-container">
+        
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/ "
+                            
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+                        <span class="sidebar-button-desc">Home</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/all-categories"
+                            
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+                        <span class="sidebar-button-desc">Categories</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/all-tags"
+                            
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+                        <span class="sidebar-button-desc">Tags</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/all-archives"
+                            
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+                        <span class="sidebar-button-desc">Archives</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link open-algolia-search"
+                             href="#search"
+                            
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-search"></i>
+                        <span class="sidebar-button-desc">Search</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="#about"
+                            
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+                        <span class="sidebar-button-desc">About</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+            <ul class="sidebar-buttons">
+            
+        </ul>
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link "
+                             href="/atom.xml"
+                            
+                        >
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+                        <span class="sidebar-button-desc">RSS</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+    </div>
+</nav>
+
+            
+            <div id="main" data-behavior="1"
+                 class="
+                        hasCoverMetaIn
+                        ">
+                <section class="postShorten-group main-content-wrap">
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title" itemprop="headline">
+                    
+                        <a class="link-unstyled" href="/2016/08/30/fibonacci/">
+                            java 实现斐波那契数列
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time itemprop="datePublished" datetime="2016-08-30T23:33:04+08:00">
+	
+		    Aug 30, 2016
+    	
+    </time>
+    
 </div>
 
-  </div>
-  
-  <footer id="footer" class="home-footer footer">
-    <div id="copyright" class="copyright">
-      &copy; 2016 Charles Zhang  Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme &copy; <a href="https://github.com/geekplux" target="_blank">GeekPlux</a>
+            </div>
+            
+                <div class="postShorten-content" itemprop="articleBody">
+                    <p>今天在看并发的时候看到的一到联系，求fibonacci数列，记录下来备忘</p>
+<blockquote>
+<p>斐波纳契数列，又称黄金分割数列，指的是这样一个数列：1、1、2、3、5、8、13、21、……在数学上，斐波纳契数列以如下被以递归的方法定义：F0=0，F1=1，Fn=F(n-1)+F(n-2)（n&gt;=2，n∈N*）。</p>
+</blockquote>
+<p>实现如下:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Fibonacci</span></span>&#123;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</div><div class="line">		System.out.println(fibonacci(<span class="number">7</span>));</div><div class="line">		System.out.println(fibonacciNormal(<span class="number">7</span>));		</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	<span class="comment">//递归实现</span></div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">fibonacci</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</div><div class="line">		<span class="keyword">if</span>(n &lt;= <span class="number">2</span>)&#123;</div><div class="line">			<span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">		&#125;<span class="keyword">else</span>&#123;</div><div class="line">			<span class="keyword">return</span> fibonacci(n-<span class="number">1</span>) + fibonacci(n-<span class="number">2</span>);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="comment">//递推实现</span></div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">fibonacciNormal</span><span class="params">(<span class="keyword">int</span> n)</span></span>&#123;</div><div class="line">		<span class="keyword">if</span>(n &lt;= <span class="number">2</span>)&#123;</div><div class="line">			<span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">		&#125;<span class="keyword">else</span>&#123;</div><div class="line">			<span class="keyword">int</span> n1 = <span class="number">1</span>, n2 = <span class="number">1</span>, sn = <span class="number">0</span>;</div><div class="line">			<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n-<span class="number">2</span>; i ++)&#123;</div><div class="line">				sn = n1 + n2;</div><div class="line">				n1 = n2;</div><div class="line">				n2 = sn;</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">return</span> sn;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
-      </div>
-    </footer>
+                    
+                        
+                    
+                    
+                        <p>
+                            <a href="/2016/08/30/fibonacci/#post-footer" class="postShorten-excerpt_link link">
+                                Comment and share
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title" itemprop="headline">
+                    
+                        <a class="link-unstyled" href="/2016/08/28/maven-study/">
+                            maven学习（持续更新中...）
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time itemprop="datePublished" datetime="2016-08-28T22:45:27+08:00">
+	
+		    Aug 28, 2016
+    	
+    </time>
+    
+</div>
 
-  
+            </div>
+            
+                <div class="postShorten-content" itemprop="articleBody">
+                    <h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><h4 id="maven是一个项目管理工具，其具体功能如下"><a href="#maven是一个项目管理工具，其具体功能如下" class="headerlink" title="maven是一个项目管理工具，其具体功能如下"></a>maven是一个项目管理工具，其具体功能如下</h4><ul>
+<li>构建项目（Builds）</li>
+<li>依赖管理（Dependencies）</li>
+<li>配置管理（SCMs）</li>
+<li>发布管理（Releases）</li>
+<li>文档编制（Documentation）</li>
+<li>生成项目报告（Report）</li>
+</ul>
+<h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><h4 id="微内核"><a href="#微内核" class="headerlink" title="微内核"></a>微内核</h4><p>maven 是通过插件机制来实现核心功能的，而 maven 只负责解析 xml 文档和管理项目生命周期和管理插件，核心功能都是交予了插件来进行实现的。</p>
+<h4 id="约定优于配置"><a href="#约定优于配置" class="headerlink" title="约定优于配置"></a>约定优于配置</h4><p>maven 为其每个配置都提供了合理的默认设置。</p>
+<h3 id="核心概念"><a href="#核心概念" class="headerlink" title="核心概念"></a>核心概念</h3><h4 id="pom概述"><a href="#pom概述" class="headerlink" title="pom概述"></a>pom概述</h4><p>maven 是通过 pom.xml 文件来管理和运行项目，POM 是 Project Object Model 的缩写。项目的属性，依赖和构建配置信息都定义在 pom.xml 文件里面。下图为 pom 文件的组成部分。</p>
+<p><img src="/images/14717815654791.jpg" alt=""></p>
+<p>大致分为四部分：</p>
+<ul>
+<li>pom 关系</li>
+<li>构建设置</li>
+<li>项目基本信息</li>
+<li>构建环境</li>
+</ul>
 
-<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+                    
+                        
+                    
+                    
+                        <p>
+                            <a href="/2016/08/28/maven-study/#post-footer" class="postShorten-excerpt_link link">
+                                Comment and share
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title" itemprop="headline">
+                    
+                        <a class="link-unstyled" href="/2016/08/28/common-radix/">
+                            进制学习
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time itemprop="datePublished" datetime="2016-08-28T22:26:09+08:00">
+	
+		    Aug 28, 2016
+    	
+    </time>
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-content" itemprop="articleBody">
+                    <h3 id="相关概念"><a href="#相关概念" class="headerlink" title="相关概念"></a>相关概念</h3><ul>
+<li>数制是用一组固定的符号和统一的规则来表示数值的方法。</li>
+<li>计算机底层是用的是数制是二进制。</li>
+<li>用 <code>Java</code> 编程使用的是十进制。<code>Java</code> 底层仍使用二进制</li>
+<li>计算机常用的数制还有八进制和十六进制</li>
+</ul>
+<h3 id="十进制"><a href="#十进制" class="headerlink" title="十进制"></a>十进制</h3><blockquote>
+<p>十进制的基本数字是0～9，逢10进位。10称作“基数”，<code>10^n</code> （10的n次幂）被称作“权”。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">10000=1*10^4</div><div class="line">1000=1*10^3</div><div class="line">100=1*10^2</div><div class="line">10=1*10^1</div><div class="line">1=1*10^0</div></pre></td></tr></table></figure>
+<h3 id="二进制"><a href="#二进制" class="headerlink" title="二进制"></a>二进制</h3><blockquote>
+<p>二进制的基本数字数0～1，逢2进位。基数是2，权为 <code>2^n</code>。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">10000=1*2^4</div><div class="line">1000=1*2^3</div><div class="line">100=1*2^2</div><div class="line">10=1*2^1</div><div class="line">1=1*2^0</div></pre></td></tr></table></figure>
+<h3 id="十六进制"><a href="#十六进制" class="headerlink" title="十六进制"></a>十六进制</h3><blockquote>
+<p>基本数字:0～9，A~F,A表示10，以此类推，逢16进位，基数16，权势 <code>16^n</code>。十六进制是二进制的简写，方便专业人员书写二进制数据。在 <code>Java</code> 代码中十六进制数用0X或0x做前缀。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">1000=1*16^3</div><div class="line">100=1*16^2</div><div class="line">10=1*16^1</div><div class="line">1=1*16^0</div></pre></td></tr></table></figure>
+<h3 id="进制转换"><a href="#进制转换" class="headerlink" title="进制转换"></a>进制转换</h3><h4 id="十六进制-1"><a href="#十六进制-1" class="headerlink" title="十六进制"></a>十六进制</h4><h5 id="转换为十进制"><a href="#转换为十进制" class="headerlink" title="转换为十进制"></a>转换为十进制</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">(5E)16 = 5*16^1 + 14*16^0</div><div class="line">		=94</div></pre></td></tr></table></figure>
+<h5 id="转换为二进制"><a href="#转换为二进制" class="headerlink" title="转换为二进制"></a>转换为二进制</h5><blockquote>
+<p>十六进制中的一位代表二进制中的四位，忽略前面的0。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">(5E)16 = (1011110)2</div><div class="line">5 = 1*2^2 + 1*2^0 = 0101</div><div class="line">E = 1*2^3 + 1*2^2 + 1*2^1 </div><div class="line">	= 1110</div></pre></td></tr></table></figure>
+<h4 id="十进制-1"><a href="#十进制-1" class="headerlink" title="十进制"></a>十进制</h4><h5 id="转为十六进制"><a href="#转为十六进制" class="headerlink" title="转为十六进制"></a>转为十六进制</h5><blockquote>
+<p>十进制转为二进制便不断的除以二，保留余数，直到商为0，将所有余数倒序排列。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">138=(8A)16</div><div class="line">138/16=8.......A</div><div class="line">8/16=0........8</div></pre></td></tr></table></figure>
+<h5 id="转为二进制"><a href="#转为二进制" class="headerlink" title="转为二进制"></a>转为二进制</h5><blockquote>
+<p>十进制转为二进制便不断的除以二，保留余数，直到商为0，将所有余数倒序排列。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">13 = (1101)2</div><div class="line">13/2＝6........1</div><div class="line">6/2=3........0</div><div class="line">3/2=1........1</div><div class="line">1/2=0........1</div></pre></td></tr></table></figure>
+<h4 id="二进制-1"><a href="#二进制-1" class="headerlink" title="二进制"></a>二进制</h4><h5 id="转为十进制"><a href="#转为十进制" class="headerlink" title="转为十进制"></a>转为十进制</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">(100010)2=1*2^5 + 1^2^1 </div><div class="line">			=34</div></pre></td></tr></table></figure>
+<h5 id="转为十六进制-1"><a href="#转为十六进制-1" class="headerlink" title="转为十六进制"></a>转为十六进制</h5><blockquote>
+<p>可将二进制转为十进制，然后由十进制转为二进制。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">(100010)2=(22)16</div></pre></td></tr></table></figure>
+<p>思路如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">(100010)2=1*2^5 + 1^2^1 </div><div class="line">			=34</div><div class="line">34／16=2......2</div><div class="line">2/16=0......2</div></pre></td></tr></table></figure>
+
+                    
+                        
+                    
+                    
+                        <p>
+                            <a href="/2016/08/28/common-radix/#post-footer" class="postShorten-excerpt_link link">
+                                Comment and share
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
+    
+    <div class="pagination-bar">
+    <ul class="pagination">
+        
+        
+        <li class="pagination-number">page 1 of 1</li>
+    </ul>
+</div>
+
+</section>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+                <footer id="footer" class="main-content-wrap">
+    <span class="copyrights">
+        Copyrights &copy; 2016 Charles Zhang. All Rights Reserved.
+    </span>
+</footer>
+
+            </div>
+            
+        </div>
+        
 
 
-<script src="/js/typing.js"></script>
-<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+<div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-remove"></i>
+        </div>
+        
+            <h4 id="about-card-name">Charles Zhang</h4>
+        
+            <div id="about-card-bio"><p>author.bio</p>
+</div>
+        
+        
+            <div id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br/>
+                <p>author.job</p>
+
+            </div>
+        
+        
+    </div>
+</div>
+
+        <div id="algolia-search-modal" class="modal-container">
+    <div class="modal">
+        <div class="modal-header">
+            <span class="close-button"><i class="fa fa-close"></i></span>
+            <a href="https://algolia.com" target="_blank" class="searchby-algolia text-color-light link-unstyled">
+                <span class="searchby-algolia-text text-color-light text-small">by</span>
+                <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
+            </a>
+            <i class="search-icon fa fa-search"></i>
+            <form id="algolia-search-form">
+                <input type="text" id="algolia-search-input" name="search"
+                    class="form-control input--large search-input" placeholder="Search "
+                    autofocus="autofocus"/>
+            </form>
+        </div>
+        <div class="modal-body">
+            <div class="no-result text-color-light text-center">no post found</div>
+            <div class="results">
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="http://yoursite.com/2016/08/28/common-radix/">
+                            <h3 class="media-heading">进制学习</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Aug 28, 2016
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="http://yoursite.com/2016/08/28/maven-study/">
+                            <h3 class="media-heading">maven学习（持续更新中...）</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Aug 28, 2016
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="http://yoursite.com/2016/08/30/fibonacci/">
+                            <h3 class="media-heading">java 实现斐波那契数列</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Aug 30, 2016
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+            </div>
+        </div>
+        <div class="modal-footer">
+            <p class="results-count text-medium"
+                data-message-zero="no post found"
+                data-message-one="1 post found"
+                data-message-other="{n} posts found">
+                3 posts found
+            </p>
+        </div>
+    </div>
+</div>
+        
+<div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
+        <!--SCRIPTS-->
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/jquery.fancybox.js"></script>
+<script src="/assets/js/jquery.fancybox-thumbs.js"></script>
+<script src="/assets/js/tranquilpeak.js"></script>
+<!--SCRIPTS END-->
 
 
 
-
-
-
-
-  </div>
-</body>
+    </body>
 </html>
